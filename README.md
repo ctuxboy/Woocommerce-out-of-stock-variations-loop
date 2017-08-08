@@ -9,6 +9,4 @@ How to use:
 2. Change 'kleur' with your filter-name
 
 See example:
-<iframe class="vidyard_iframe" src="//play.vidyard.com/MDJ1zXzd1xXcpvi1iawYtW.html?v=3.1.1" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
-
-
+https://share.viewedit.com/MDJ1zXzd1xXcpvi1iawYtW
