@@ -1,3 +1,4 @@
+<?php
 add_action( 'woocommerce_after_shop_loop_item', 'wk_out_of_stock_variations_loop' );
 
 function wk_out_of_stock_variations_loop(){
