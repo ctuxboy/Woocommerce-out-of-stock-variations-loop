@@ -8,5 +8,5 @@ How to use:
 1. Paste the code in your theme's functions.php
 2. Change 'kleur' with your filter-name
 
-See example:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8k9RuIa0rJA" frameborder="0" allowfullscreen></iframe>
+See demo:
+https://youtu.be/8k9RuIa0rJA
