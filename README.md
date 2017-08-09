@@ -9,4 +9,4 @@ How to use:
 2. Change 'kleur' with your filter-name
 
 See example:
-https://share.viewedit.com/MDJ1zXzd1xXcpvi1iawYtW
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8k9RuIa0rJA" frameborder="0" allowfullscreen></iframe>
