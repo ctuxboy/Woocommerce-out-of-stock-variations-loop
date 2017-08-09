@@ -9,7 +9,7 @@ function wk_out_of_stock_variations_loop(){
         if ( $available )foreach ( $available as $instockitem ) {
             if ( isset($instockitem['attributes']['attribute_pa_kleur'] ) ) {
 				if ( ( $instockitem['attributes']['attribute_pa_kleur'] == $_GET['filter_kleur'] ) && ( !$instockitem['max_qty']>0 ) ) {
-                    echo  '<p style="color:red;font-weight: bold;">NIET OP VOORRAAD<p>';
+                    echo  '<p style="color:red;font-weight: bold;">NIET OP VOORRAAD</p>';
                 }
             
             }
