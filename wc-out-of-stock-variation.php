@@ -3,7 +3,7 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'wk_out_of_stock_variatio
 
 function wk_out_of_stock_variations_loop(){
     global $product;
-    if ( $product->product_type == 'variable' ) {
+    if ( $product->product_type == 'variable' ) { // if variation product is out of stock
 
         $available = $product->get_available_variations();
         if ( $available )foreach ( $available as $instockvar ) {
