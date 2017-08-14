@@ -10,4 +10,4 @@ How to use:
 
 See [Demo](https://youtu.be/8k9RuIa0rJA)
 
-IMPORTANT: Uncheck 'Hide Sold Out products' in catalogue in Woocommerce -> Settings -> Products -> Stock
+IMPORTANT: Uncheck 'Hide Sold Out products in catalogue' (Woocommerce -> Settings -> Products -> Stock)
