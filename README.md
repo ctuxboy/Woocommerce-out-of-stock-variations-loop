@@ -9,3 +9,5 @@ How to use:
 2. Change 'kleur' with your filter-name
 
 See [Demo](https://youtu.be/8k9RuIa0rJA)
+
+IMPORTANT: Uncheck 'Hide Sold Out products' in catalogue in Woocommerce -> Settings -> Products -> Stock
