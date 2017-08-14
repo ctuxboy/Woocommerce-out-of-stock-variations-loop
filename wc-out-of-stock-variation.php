@@ -1,18 +1,22 @@
 <?php
-add_action( 'woocommerce_after_shop_loop_item', 'wk_out_of_stock_variations_loop' );
+add_action( 'woocommerce_before_shop_loop_item_title', 'wk_out_of_stock_variations_loop' );
 
 function wk_out_of_stock_variations_loop(){
     global $product;
     if ( $product->product_type == 'variable' ) {
 
         $available = $product->get_available_variations();
-        if ( $available )foreach ( $available as $instockitem ) {
-            if ( isset($instockitem['attributes']['attribute_pa_kleur'] ) ) {
-				if ( ( $instockitem['attributes']['attribute_pa_kleur'] == $_GET['filter_kleur'] ) && ( !$instockitem['max_qty']>0 ) ) {
-                    echo  '<p style="color:red;font-weight: bold;">NIET OP VOORRAAD</p>';
+        if ( $available )foreach ( $available as $instockvar ) {
+            if ( isset($instockvar['attributes']['attribute_pa_kleur'] ) ) {
+              
+				if ( ( $instockvar['attributes']['attribute_pa_kleur'] == $_GET['filter_kleur'] ) && (!$instockvar['max_qty']>0) ) {
+                    echo  '<p style="color:red;font-weight: bold;">OUT OF STOCK</p>';
                 }
             
             }
         }
+    }	
+    if ( !$product->is_in_stock() ) { // if single product is out of stock
+        echo  '<p style="color:red;font-weight: bold;">OUT OF STOCK</p>';
     }
 }
