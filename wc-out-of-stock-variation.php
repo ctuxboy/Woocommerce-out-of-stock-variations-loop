@@ -9,10 +9,12 @@ function wk_out_of_stock_variations_loop(){
         if ( $available )foreach ( $available as $instockvar ) {
             if ( isset($instockvar['attributes']['attribute_pa_kleur'] ) ) {
               
-				if ( ( $instockvar['attributes']['attribute_pa_kleur'] == $_GET['filter_kleur'] ) && (!$instockvar['max_qty']>0) ) {
-                    echo  '<p style="color:red;font-weight: bold;">OUT OF STOCK</p>';
+		if ( ( $instockvar['attributes']['attribute_pa_kleur'] == $_GET['filter_kleur'] ) && (!$instockvar['max_qty']>0) ) {
+		   global $product;
+		   $id = $product->get_id();
+	           echo "<style>.post-$id{display: none}</style>";
+		   // echo  '<p style="color:red;font-weight: bold;">OUT OF STOCK</p>';
                 }
-            
             }
         }
     }	
